@@ -1,6 +1,9 @@
 const fs = require("fs");
 const path = require("path");
 const axios = require("axios");
+const dotenv = require('dotenv')
+
+dotenv.config()
 
 const oas = fs.readFileSync(path.join(__dirname, "../oas/products.yml"));
 const report = fs.readFileSync(path.join(__dirname, "../output/report.md"));
